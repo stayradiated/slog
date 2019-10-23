@@ -1,6 +1,6 @@
 {
   "name": "@stayradiated/slog",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Log a message with a promise, including a success or fail message",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
