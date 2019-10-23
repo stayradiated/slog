@@ -1,0 +1,39 @@
+{
+  "name": "@stayradiated/slog",
+  "version": "1.0.0",
+  "description": "Log a message with a promise, including a success or fail message",
+  "main": "./dist/index.js",
+  "types": "./dist/index.ts",
+  "scripts": {
+    "test": "pkg-test",
+    "build": "pkg-build",
+    "lint": "pkg-lint",
+    "tidy": "pkg-tidy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stayradiated/slog.git"
+  },
+  "keywords": [
+    "log",
+    "spinner",
+    "success",
+    "fail",
+    "message",
+    "promise"
+  ],
+  "author": "George Czabania <george@czabania.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stayradiated/slog/issues"
+  },
+  "homepage": "https://github.com/stayradiated/slog#readme",
+  "devDependencies": {
+    "@mishguru/package": "7.8.4",
+    "@types/luxon": "1.15.2"
+  },
+  "dependencies": {
+    "chalk": "2.4.2",
+    "luxon": "1.19.3"
+  }
+}
