@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Log a message with a promise, including a success or fail message",
   "main": "./dist/index.js",
-  "types": "./dist/index.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "pkg-test",
     "build": "pkg-build",
