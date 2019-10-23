@@ -35,5 +35,10 @@
   "dependencies": {
     "chalk": "2.4.2",
     "luxon": "1.19.3"
+  },
+  "release-it": {
+    "scripts": {
+      "beforeStart": "npm run build"
+    }
   }
 }
