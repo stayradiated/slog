@@ -10,7 +10,7 @@ enum STATE {
 const slog = async <T>(
   message: string,
   promise: Promise<T>,
-  delay: number = 1,
+  delay: number = 1000,
 ): Promise<T> => {
   const startTime = DateTime.local()
 
