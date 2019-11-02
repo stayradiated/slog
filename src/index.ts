@@ -7,9 +7,11 @@ enum STATE {
   FAILED,
 }
 
-const FREQUENCY = 1000 / 1
-
-const slog = async <T>(message: string, promise: Promise<T>): Promise<T> => {
+const slog = async <T>(
+  message: string,
+  promise: Promise<T>,
+  delay: number = 1,
+): Promise<T> => {
   const startTime = DateTime.local()
 
   let nextTimeout: NodeJS.Timeout
@@ -37,7 +39,7 @@ const slog = async <T>(message: string, promise: Promise<T>): Promise<T> => {
     console.info(color(`${message} (${duration}) ${stateMsg}`))
 
     if (state === STATE.PENDING) {
-      nextTimeout = setTimeout(() => logState(STATE.PENDING), FREQUENCY)
+      nextTimeout = setTimeout(() => logState(STATE.PENDING), delay)
     }
   }
   logState(STATE.PENDING)
